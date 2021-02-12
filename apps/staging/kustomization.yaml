@@ -6,4 +6,7 @@ resources:
 patchesStrategicMerge:
   - podinfo-values.yaml
 patches:
-  - patch-sec.yaml
+- path: patch-sec.yaml
+  target:
+    kind: Deployment
+    name: "podinfo"
