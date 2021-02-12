@@ -14,4 +14,4 @@ spec:
       hosts:
         - podinfo.staging
       hpa:
-        enabled: false        
+        enabled: true
