@@ -13,3 +13,5 @@ spec:
     ingress:
       hosts:
         - podinfo.staging
+      hpa:
+        enabled: false        
