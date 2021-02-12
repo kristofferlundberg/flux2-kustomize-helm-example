@@ -10,9 +10,4 @@ patches:
     version: v1
     kind: Deployment
     name: podinfo
-  patch: | -
-    - op: add
-      path: "/spec/template/spec"
-      value:
-        securityContext:
-          runAsUser: 1000
+  path: patch-sec.yaml
