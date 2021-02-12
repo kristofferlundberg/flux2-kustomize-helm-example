@@ -5,4 +5,5 @@ resources:
   - ../base/podinfo
 patchesStrategicMerge:
   - podinfo-values.yaml
+patches:
   - patch-sec.yaml
