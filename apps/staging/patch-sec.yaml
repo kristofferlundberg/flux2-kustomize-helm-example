@@ -1,14 +1,14 @@
 - op: add
   path: /spec
-  value: |-
+  value:
     postRenderers:
     - kustomize: 
-        patchesStrategicMerge:
-        -  kind: Deployment
-            apiVersion: apps/v1
-            metadata:
-              name: pod-info
-              namespace: pod-info
-            spec:
-              securityContext:
-                runAsUser: 1000
+      patchesStrategicMerge:
+      - kind: Deployment
+        apiVersion: apps/v1
+        metadata:
+          name: pod-info
+          namespace: pod-info
+        spec:
+          securityContext:
+            runAsUser: 1000
