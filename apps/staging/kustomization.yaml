@@ -7,7 +7,5 @@ patchesStrategicMerge:
   - podinfo-values.yaml
 patches:
 - target:
-    version: v1
-    kind: Deployment
-    name: podinfo
+    kind: HelmRelease
   path: patch-sec.yaml
