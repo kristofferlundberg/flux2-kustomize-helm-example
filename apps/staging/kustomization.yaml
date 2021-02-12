@@ -11,8 +11,8 @@ patches:
     kind: Deployment
     name: podinfo
   patch: | -
-    - op: replace
-      path: "/spec/template/spec/securityContext"
+    - op: add
+      path: "/spec/template/spec"
       value:
         securityContext:
           runAsUser: 1000
