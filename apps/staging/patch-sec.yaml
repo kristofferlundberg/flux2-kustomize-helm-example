@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    meta.helm.sh/release-name: podinfo
+    meta.helm.sh/release-namespace: podinfo
+  labels:
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: podinfo
+  name: podinfo
+  namespace: podinfo
+spec:
+  template:
+    spec:
+      securityContext:
+        runAsUser: 1000
