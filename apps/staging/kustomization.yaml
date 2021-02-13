@@ -5,7 +5,3 @@ resources:
   - ../base/podinfo
 patchesStrategicMerge:
   - podinfo-values.yaml
-patches:
-- target:
-    kind: HelmRelease
-  path: patch-sec.yaml
